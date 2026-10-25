@@ -7,6 +7,7 @@ import ProfilePage from "@/pages/ProfilePage";
 import UsersPage from "@/pages/UsersPage";
 import SettingsPage from "@/pages/SettingsPage";
 import UnauthorizedPage from "@/pages/UnauthorizedPage";
+import NotFoundPage from "@/pages/NotFoundPage";
 
 export default function App() {
   return (
@@ -49,6 +50,8 @@ export default function App() {
             }
           />
         </Route>
+
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );
